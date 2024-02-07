@@ -1,9 +1,27 @@
-import React from 'react'
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'; 
+import  HomePage from '../src/pages/HomePage'
+import AboutPage from '../src/pages/AboutPage'
+import "./index.css";
+import CollectionPage from '../src/pages/CollectionPage';
+import ContactUsPage from './pages/ContactUsPage';
+import ShopPage from './pages/ShopPage';
 
 const App = () => {
   return (
-    <div>App</div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<HomePage />}/>
+          <Route path="/home" element={<HomePage />}/>
+          <Route path="/about" element={<AboutPage />}/>
+          <Route path="/collection" element={<CollectionPage />}/>
+          <Route path="/shop" element={<ShopPage />}/>
+          <Route path="/contact" element={<ContactUsPage />}/>
+        </Routes>
+      </BrowserRouter>
+    </>
   )
-}
+};
 
-export default App
+export default App;

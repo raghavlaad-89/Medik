@@ -1,0 +1,121 @@
+.specialProducts{
+    margin-top: 60px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.specialProducts_head{
+    padding: 15px 0;
+    text-align: center;
+    text-transform: none;
+    font-size: 40px;
+    background: url(https://medik.wpenginepowered.com/wp-content/themes/medik/images/leaf.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #003242;
+    line-height: 50px;
+    font-weight: 700;
+  }
+
+  .specialProducts_para{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dFlex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.specialProducts_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    padding: 10px 0 0;
+    box-sizing: border-box;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .specialProductCard{
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        position: relative;
+        transform: scale(0.8);
+        margin-bottom: 20px;
+        overflow: hidden;
+
+        .productCard_name{
+          text-align: center;
+        }
+        .productCard_img{
+            img{
+                width: 100%;
+                height: auto;
+                border-radius: 15px;
+                display: block;
+            }
+        }
+    }
+
+    .productCard_addToCartButton{
+        padding: 15px 30px;
+        font-weight: 900;
+        margin-bottom: 30px;
+        margin-top: 20px;
+        background-color: #35C7DF;
+        text-transform: uppercase;
+        cursor: pointer;
+        border-radius: 30px;
+        color: white;
+        letter-spacing: 0;
+        position: relative;
+        text-align: center;
+        vertical-align: top;
+        font-size: 12px;
+        /* transition: color 0.15s linear 0s, transform 0.3s linear 0s; */
+    }
+
+    .specialProductCard:hover{
+        background-color: rgb(233, 243, 246);
+        border: 0.3px solid blue;
+    }
+    .productCard_addToCartButton:hover{
+        background-color: #3218dc;
+    }
+}
+
+@media (min-width: 1024px) {
+    .specialProductCard{
+        width: 25%;
+    }
+}
+
+@media (max-width:1024px) {
+    .specialProductCard{
+        width: 30%;
+    }
+}
+
+@media (max-width:768px) {
+    .specialProductCard{
+        width: 45%;
+    }
+}
+
+
+.productCard_price{
+    color: blue;
+}

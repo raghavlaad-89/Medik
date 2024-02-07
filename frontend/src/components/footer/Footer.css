@@ -1,0 +1,158 @@
+.footer {
+    background-image: url('https://medik.wpenginepowered.com/wp-content/uploads/2020/05/footer-bg.png?id=21512');
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    margin: 10px 0px;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+.content_first{
+    color: white;
+    font-size: 16px;
+    width: 20%;
+    padding: 2px 15px;
+    margin-right: 20px;
+}
+
+.content_second{
+    width: 22%;
+    padding: 2px 15px;
+}
+
+.content_third{
+    width: 22%;
+    padding: 2px 15px;
+}
+
+.content_fourth{
+    width: 22%;
+    padding: 2px 15px;
+}
+
+.content_first_logo img{
+    width: 178px;
+}
+
+.content_first_address{
+    color: white;
+    font-size: 16px;
+    padding: 10px 0px;
+}
+
+.content_first_phone{
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 0px;
+}
+
+.content_first_email{
+    color:#ffffff;
+    padding: 10px 0px;
+}
+
+.content_first_social{
+    display: flex;
+    margin: 20px 20px;
+    margin-left: 0px;
+}
+
+.content_first_social_links{
+    background-color: blue;
+    margin: 4px;
+    padding: 6px 10px;
+}
+
+
+.content_second_head{
+    color: #ffffff;
+    text-align: left;
+    font-family: Titillium Web;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    margin: 30px 0px;
+}
+
+.content_third_head{
+    color: #ffffff;
+    text-align: left;
+    font-family: Titillium Web;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    margin: 30px 0px;
+}
+
+.content_fourth_head{
+    color: #ffffff;
+    text-align: left;
+    font-family: Titillium Web;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    margin: 30px 0px;
+}
+
+
+.footer_copyright{
+    text-align: center;
+    margin-top: 10px;
+    padding: 20px;
+    border-top: 1.5px solid white;
+    font-size: 100%;
+    outline: 0;
+    vertical-align: baseline;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-weight: 300;
+    letter-spacing: 0px;
+    line-height: 27px;
+}
+
+
+@media (max-width: 768px) {
+    .content{
+        display: block;
+    }
+    .content_first{
+        width: 85%;
+        margin: 0px auto;
+    }
+    .content_second{
+        width: 85%;
+        margin: 0px auto;
+    }
+    .content_third{
+        width: 85%;
+        margin: 0px auto;
+    }
+    .content_fourth{
+        width: 85%;
+        margin: 0px auto;
+    }
+}
+
+.link{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.link:hover{
+    color: blueviolet;
+}
+

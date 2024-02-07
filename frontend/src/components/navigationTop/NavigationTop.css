@@ -1,0 +1,41 @@
+.navigationTop{
+    background-image: url('http://medik.wpenginepowered.com/wp-content/uploads/2020/02/breadcrumb-bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    content: "";
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    border: 0;
+    font-size: 100%;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    text-align: center;
+}
+
+.navigationTop_head{
+    color: #ffff;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0px;
+    padding-bottom: 0px;
+}
+
+.navigationTop_path{
+    color: #ffff;
+    padding: 15px 0px;
+    padding-top: 0px;
+    font-size: 14px;
+}
+
+.link{
+    text-decoration: none;
+}

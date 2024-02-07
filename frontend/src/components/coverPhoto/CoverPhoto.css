@@ -1,0 +1,39 @@
+ 
+  .safety-masks-image {
+    background-image: url('https://via.placeholder.com/1920x1080'); /* Replace with your actual image */
+    background-size: cover;
+    background-position: center;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+  
+  .safety-masks-text {
+    color: white;
+    position: relative;
+    margin: 150px;
+    font-size: 24px;
+  }
+  
+  .safety-masks-button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .safety-masks-button:hover {
+    background-color: blue;
+    color: white;
+  }
+
+  .hurry{
+    color: black;
+  }

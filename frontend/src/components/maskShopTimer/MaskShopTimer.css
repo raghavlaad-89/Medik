@@ -1,0 +1,66 @@
+.cover{
+    font-family: Arial, sans-serif;
+    background-color: rgb(229, 150, 47);
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.cover_text{
+    position: relative;
+    width: 40%;
+    box-sizing: border-box;
+    margin: 100px;
+    padding: 2rem;
+    color: black;
+}
+
+.cover_textHeading{
+    font-size: 3rem;
+}
+
+.cover_textSubHead{
+    font-size: 1.5rem;
+}
+
+.cover_timer{
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+.abbrivation{
+    margin: 0;
+    text-decoration: none;
+}
+.abbrivation_list{
+    list-style: none;
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+
+}
+.abbrivation_listitems{
+    text-decoration: none;
+    margin: 0rem 1.2rem;
+}
+.cover_button {
+    background-color: #6649f5;
+    color: white;
+    border: none;
+    margin-top: 1.5rem;
+    border-radius: 25px;
+    padding: 0.5rem 2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .cover_button:hover{
+    background-color: #a394f3;
+  }
+

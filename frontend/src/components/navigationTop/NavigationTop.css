@@ -20,13 +20,14 @@
 }
 
 .navigationTop_head{
-    color: #ffff;
+    color: #f4ecec;
     font-size: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 15px 0px;
     padding-bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .navigationTop_path{
@@ -34,6 +35,7 @@
     padding: 15px 0px;
     padding-top: 0px;
     font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .link{

@@ -6,6 +6,7 @@ import NewsletterSub from '../components/newsletterSub/NewsletterSub';
 import Footer from '../components/footer/Footer';
 import SanitizerCard from '../components/sanitizeCard/SanitizerCard';
 import SpecialProducts from '../components/specialProducts/SpecialProducts';
+import ArrowButton from '../components/arrowButton/ArrowButton';
 
 export default function HomePage() {
     return (
@@ -17,6 +18,7 @@ export default function HomePage() {
             <MaskShopTimer />
             <SpecialProducts />
             <NewsletterSub />
+            <ArrowButton />
             <Footer />
         </>
     )

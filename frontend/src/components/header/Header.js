@@ -1,12 +1,27 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./Header.css";
 import { FaHeart, FaShoppingCart, FaUser, FaPhoneAlt, FaInstagram, FaGooglePlusG, FaTwitter, FaFacebook, FaBars, FaTimes } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { Link } from 'react-router-dom';
+import DropDown from "../dropDown/DropDown";
 
 const Header = () => {
   const navRef = useRef();
   const showNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");
+  }
+
+  // const [click, setClick] = useState(false)
+  const [dropdown, setDropdown] = useState(false)
+  // const changeClick = () => setClick(!click)
+  // const closeMobileMenu = () => setClick(false)
+
+  const onMouseEnter = () => {
+      setDropdown(true)
+  }
+
+  const onMouseLeave = () => {
+      setDropdown(false)
   }
   return (
     <nav className="navbar">
@@ -58,21 +73,34 @@ const Header = () => {
             <button onClick={showNavbar} className="navbar_lower_menu_btn closeBtn">
               <FaTimes />
             </button>
-            <a href="/home" className="navbar_lower_menu_link">
-               Home
-            </a>
-            <a href="/collection" className="navbar_lower_menu_link">
-               Collection
-            </a>
-            <a href="/about" className="navbar_lower_menu_link">
-               About
-            </a>
-            <a href="/shop" className="navbar_lower_menu_link">
-               Shop
-            </a>
-            <a href="/contact" className="navbar_lower_menu_link">
-               ContactUs
-            </a>
+            <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}  className="navbar_lower_menu_link">
+              <Link to="/" className="navbar_lower_menu_links">
+                Home <i className='fas fa-caret-down' />
+                {dropdown && <DropDown />}
+              </Link>
+            </div>
+            <div className="navbar_lower_menu_link">
+              <Link to="/about" className="navbar_lower_menu_links">
+                About
+              </Link>
+            </div>
+            <div className="navbar_lower_menu_link">
+              <Link to="/collection" className="navbar_lower_menu_links">
+                Collection
+              </Link>
+            </div>
+            <div className="navbar_lower_menu_link" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+              <Link to="/shop" className="navbar_lower_menu_links">
+                Shop <i className='fas fa-caret-down' />
+                {dropdown && <DropDown />}
+              </Link>
+            </div>
+            <div className="navbar_lower_menu_link" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+              <Link to="/contact" className="navbar_lower_menu_links">
+                Contact Us <i className='fas fa-caret-down' />
+                {dropdown && <DropDown />}
+              </Link>
+            </div>
         </nav>
 
         <button onClick={showNavbar} className="navbar_lower_menu_btn openBtn">
@@ -82,7 +110,7 @@ const Header = () => {
         
         <ul className="navbar-lower-icons">
           <li className="navbar-items">
-            <a href="/contact" className="navbar-lower-icons-link">
+            <a href="/myaccount" className="navbar-lower-icons-link">
               <FaUser />
             </a>
             

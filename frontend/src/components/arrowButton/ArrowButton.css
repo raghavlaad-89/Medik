@@ -1,0 +1,27 @@
+.arrow-button {
+  position: fixed;
+  bottom: 86px;
+  right: 15px;
+  z-index: 999;
+  background-color: #076cec;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow-button.visible {
+  opacity: 1;
+}
+
+.arrow-button:hover {
+  background-color: #0056b3;
+}

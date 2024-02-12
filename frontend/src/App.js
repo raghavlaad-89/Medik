@@ -6,6 +6,7 @@ import "./index.css";
 import CollectionPage from '../src/pages/CollectionPage';
 import ContactUsPage from './pages/ContactUsPage';
 import ShopPage from './pages/ShopPage';
+import MyAccount from './pages/MyAccount';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/collection" element={<CollectionPage />}/>
           <Route path="/shop" element={<ShopPage />}/>
           <Route path="/contact" element={<ContactUsPage />}/>
+          <Route path="/myaccount" element={<MyAccount />}/>
         </Routes>
       </BrowserRouter>
     </>

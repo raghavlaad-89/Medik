@@ -1,0 +1,35 @@
+.pagination{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    transition: all 0.3s linear;
+
+}
+.pagination_btn_active{
+    align-items: center;
+    text-align: center;
+    border: 0;
+    color: white;
+    background-color: black;
+    transition: all 0.3s linear;
+    margin: 7px;
+    padding: 8px 15px;
+
+}
+
+.pagination_btn_inactive{
+    background-color: #076cec;
+    align-items: center;
+    text-align: center;
+    border: 0;
+    color: white;
+    transition: all 0.3s linear;
+    margin: 7px;
+    padding: 8px 15px;
+
+}
+.pagination_btn_inactive:hover{
+    background-color: black;
+    transition: all 0.3s linear;
+}

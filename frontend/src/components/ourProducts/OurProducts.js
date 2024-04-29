@@ -11,7 +11,7 @@ import Devices from "./products/Devices";
 const CardButton = ({ onClick, children, isSelected }) => {
   
   return (
-  <button onClick={onClick} className='ourProducts_btn' style={{ backgroundColor: isSelected ? 'lightblue' : 'white' }}>
+  <button onClick={onClick} className='ourProducts_btn' style={{ backgroundColor: isSelected ? 'lightblue' : 'white', width: '200px'}}>
     {children}
   </button>
 );

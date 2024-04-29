@@ -9,10 +9,6 @@
   padding: 9px;
 }
 
-a{
-  margin: 0px 3px;
-}
-
 .navbar_upper_left{
   display: flex;
   justify-content: space-between;
@@ -56,197 +52,190 @@ a{
   margin: 0px 0px;
 }
 
-
 .navbar_lower {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   background-color: white;
-  padding: 6px 6px;
+  transition: all 0.3s linear 0s;
 }
 
-@media (max-width: 786px) {
-  .navbar_lower{
-    display: block;
-  }
-
-  
-  .navbar_upper_left{
-    display: block;
-  }
-  .navbar_upper{
-    display: block;
-  }
-  .navbar_lower_menu_btn{
-    display: block;
-    text-align: center;
-    margin: 10px 45%;
-  }
-}
-  
-.navbar_lower_brand {
+.navbar_lower_brand{
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
   font-weight: bold;
   color: #333;
-  margin-left: 0px;
+  width: 170px;
+  transition: all 0.3s linear 0s;
 }
 
 .navbar_logo{
-  width: 35%;
-  height: auto;
+  width: 100%;
 }
+
   
 .navbar_lower_menu {
-  /* display: flex;
+  display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   list-style: none;
   margin: 0;
-  padding: 0; */
-  display: grid;
-  grid-template-columns: repeat(5, auto);
-  gap: 0 10px;
-  width: 70vw;
-  justify-content: center;
-  margin-right: 35px;
+  padding: 10px 0px;
+  gap: 2.5rem;
+  font-size: 16px;
+  transition: all 0.3s linear 0s;
 }
 
 .navbar_lower_menu_link{
   text-decoration: none;
-  transition: all .2s ease-in-out;
-  font-family: 'Open Sans', sans-serif;
-  width: fit-content;
   font-size: 16px;
   color: #030d1d;
-  margin: 0 12%;
-  display: flex;
-  align-items: center;
-  height: 80px;
+  transition: all 0.3s linear 0s;
+  padding: 25px 0px;
+  position: relative;
+}
+
+.navbar_lower_menu_links:hover{
+  color: #076cec;
+  transition: all 0.3s linear 0s;
 }
 
 .navbar_lower_menu_links{
   color: #030d1d;
   text-decoration: none;
-  padding: 8px 20px;
-  transition: all 0.3s ease-out;
-}
-
-.fa-bars {
-  color: #fff;
-}
-
-.navbar_lower_menu_link:hover{
-  color: rgb(54, 151, 236);
+  transition: all 0.3s linear 0s;
 }
 
 .navbar_lower_menu_btn{
-  padding: 5px;
   background: transparent;
   cursor: pointer;
   border: none;
-  outline: none;
+  outline: none; 
   display: none;
-  visibility: hidden;
   opacity: 0;
   font-size: 1.1rem;
 }
 
-@media screen and (max-width: 1024px) {
-  .navbar_lower_menu_btn{
-    visibility: visible;
-    opacity: 1;
-  }
-  .navbar_lower_menu{
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 250px;
-    height: calc(100vh - 85px);
-    display: flex;
-    align-items:flex-start;
-    justify-content:flex-start;
-    flex-direction: column;
-    gap: 1.5rem;
-    background-color: rgb(18, 213, 213);
-    transition: 1s;
-    transform: translateY(-100vh);
-  }
-
-  .responsive_nav{
-    transform: none;
-  }
-  
-  .navbar_lower_menu_btn{
+  .navbar_lower_icons{
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-  }
-  .navbar_lower_menu_btn closeBtn{
-    position: absolute;
-    top: 0rem;
-    right: 1rem;
-  }
-  .navbar_lower_menu_link{
-    font-size: 1.5rem;
-  }
-  .navbar_lower_menu_links{
-    text-align: center;
-    padding: 1.5rem;
-    width: 100%;
-    
-  }
-  .navbar_lower_menu_link:hover{
-    color: #644ced;
-  }
-}
-  
-  .navbar_item {
-    margin: 0px;
-    padding: 10px 40px;
-    color: #030d1d;
-  }
-  
-  .navbar_link {
-    display: flex;
-    align-items: center;
-    color: #333;
-    text-decoration: none;
-    font-size: 16px;
-  }
-    
-  .navbar-item:hover .navbar-submenu {
-    display: flex;
-    flex-direction: column;
-  }
-
-
-
-  .navbar-lower-icons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    gap: 1rem;
     list-style: none;
-    margin: 15px;
-    padding: 0;
+    margin: 25px;
   }
 
-  .navbar-lower-icons-link{
+  .navbar_lower_icons_items_link{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     color: black;
-    margin-right: 1rem;
   }
 
+  .cart-trolly{
+    position: relative;
+  }
+  .navbar-lower-icons-cart{
+    position: relative;
+  }
+  .navbar-lower-icons-cartItemCount{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #076cec;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    top: -64%;
+    left: 90%;
+  }
+.navbar_lower_icons_items_link:hover {
+  color: lightblue;
+}
 
-
-
-
-
-  .navbar-lower-icons-link:hover {
-    color: lightblue;
+  @media screen and (max-width: 1024px) {
+    .navbar_lower_menu_btn{
+      visibility: visible;
+      opacity: 1;
+      display: block;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .navbar_lower_menu{
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 250px;
+      height: calc(100vh);
+      display: flex;
+      align-items:flex-start;
+      justify-content:flex-start;
+      flex-direction: column;
+      gap: 1.5rem;
+      background-color: rgb(245, 250, 250);
+      transition: 1s;
+      z-index: 999;
+      gap: 0rem;
+      font-size: 16px;
+    }
+  
+    .responsive_nav{
+      transform: none;
+      display: none;
+    }
+    
+    .navbar_lower_menu_btn closeBtn{
+      position: absolute;
+      top: 0rem;
+      right: 1rem;
+    }
+    .navbar_lower_menu_link{
+      width: 100%;
+      font-size: 1.5rem;
+      padding: 10px 0px;
+    }
+    .navbar_lower_menu_links{
+      text-align: center;
+      padding: 1.5rem;
+      width: 100%;
+      padding: 0;
+      margin-left: 10px;
+    }
+    .navbar_lower_menu_links:hover{
+      color: white;
+    }
+    .navbar_lower_menu_link:hover{
+      background-color: #076cec;
+      color: #fbfafc;
+    }
+  }
+  
+  @media (max-width: 786px) {
+    .navbar_lower{
+      display: block;
+    }
+    .navbar_lower_brand{
+      width: 100%;
+    }
+    .navbar_logo{
+      width: 25%;
+      align-items: center;
+    }
+    
+    .navbar_upper_left{
+      display: block;
+    }
+    .navbar_upper{
+      display: block;
+    }
+    .navbar_lower_menu_btn{
+      display: block;
+      text-align: center;
+      margin: 10px 45%;
+    }
   }

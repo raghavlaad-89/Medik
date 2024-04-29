@@ -1,7 +1,8 @@
 import React from 'react';
+import "./card.css";
 import devicesData from '../../../data/ourProducts/DevicesData';
 import StarRating from '../starRating/StarRating';
-import "./card.css";
+
 
 const Devices = () => {
   const listItems = devicesData.map((item)=>

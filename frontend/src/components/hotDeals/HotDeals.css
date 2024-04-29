@@ -1,0 +1,11 @@
+.hd_head{
+    background-color: #076cec;
+    border-radius: 5px;
+    color: #fff;
+    padding: 9px 15px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 22px 29px 0 rgba(7,108,236,0.1);
+    margin: 10px 0px;
+}
+

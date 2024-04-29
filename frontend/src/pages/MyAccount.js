@@ -8,7 +8,7 @@ export default function MyAccount() {
     return(
         <>
             <Header />
-            <NavigationTop />
+            <NavigationTop path="My Account" />
             <MyAccForm />
             <ArrowButton />
             <Footer />

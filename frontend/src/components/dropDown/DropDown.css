@@ -1,0 +1,33 @@
+.DropDown{
+    position: absolute;
+    top: 4.5rem;
+    z-index: 990;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-width: 15rem;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s linear;
+    padding: 0px 0px 0px 10px;
+}
+.DropDown li{
+    color: black;
+    transition: all 0.3s linear;
+    padding: 7px 20px;
+
+}
+.DropDown li:hover{
+    color: rgb(124, 102, 235);
+    transition: all 0.3s linear;
+}
+
+.DropDown_Link{
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s linear;
+}
+
+.DropDown_Link:hover{
+    color: rgb(124, 102, 235);
+    transition: all 0.3s linear;
+}

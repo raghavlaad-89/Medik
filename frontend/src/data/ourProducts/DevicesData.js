@@ -122,3 +122,6 @@ const devicesData = [
 
 ]
 export default devicesData;
+
+
+// <rs-sbg data-lazyload="//medik.wpengine.com/wp-content/uploads/2020/05/shop-slider-bg.jpg" class="" data-bgcolor="transparent" style="width: 100%; height: 100%;" data-src-rs-ref="//medik.wpengine.com/wp-content/uploads/2020/05/shop-slider-bg.jpg"><canvas style="width: 100%; height: 100%; background-color: transparent; opacity: 1; filter: none;" width="914" height="446"></canvas></rs-sbg>

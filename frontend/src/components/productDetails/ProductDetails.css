@@ -1,0 +1,159 @@
+.productDetails{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.left{
+    width: 50%;
+}
+
+.right{
+    width: 40%;
+}
+
+.rightContent_head{
+    font-size: 34px;
+    font-weight: normal;
+}
+
+.rightContent_price{
+    color: #076cec;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.rightContent_rating{
+    display: flex;
+    gap: 1rem;
+    margin: 17px 0px 35px 8px
+}
+
+.rightContent p{
+    line-height: 28px;
+    margin-bottom: 30px;
+    color: #808080;
+    font-weight: 300;
+    letter-spacing: 0px;
+}
+
+.rightContent_table_prop{
+    padding: 10px 0px;
+    margin: 0;
+    line-height: 1.5;
+    font-weight: 700;
+    width: 150px;
+}
+
+.rightContent_table_detail{
+    color: #808080;
+    font-weight: 300;
+}
+
+.right_cartManage{
+    display: flex;
+    gap: 1rem;
+    margin: 5px 0px;
+}
+
+.right_cartManage_qbtn{
+    height: 40px;
+    line-height: 40px;
+    min-height: 40px;
+    color: #666;
+    font-size: 22px;
+    font-weight: normal;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    width: 46px;
+    transition: all 300ms linear 0s;
+    border: 0.2px solid rgb(156, 156, 155);
+    background-color: white;
+}
+
+.right_cartManage_qbtn:hover{
+    background-color: #076cec;
+    color: white;
+}
+
+.right_cartManage_quantity{
+    height: 40px;
+    line-height: 40px;
+    min-height: 40px;
+    color: black;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    width: 46px;
+    transition: all 300ms linear 0s;
+    border: 0.2px solid rgb(156, 156, 155);
+    background-color: white;
+    border-left: 0;
+    border-right: 0;
+}
+
+.right_cartManage_q{
+    display: flex;
+}
+
+.right_addToCartBtn{
+    font-size: 16px;
+    color: white;
+    background-color: #076cec;
+    padding: 0 15px;
+    text-align: center;
+    font-weight: 700;
+    border: 0;
+    height: 40px;
+    width: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.right_addToCartBtn:hover{
+    background-color: #9ec4f7;
+    transition: all 0.3s linear;
+}
+
+.right_addWishList{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    background-color: #076cec;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 0;
+    margin: 12px 0;
+    text-transform: inherit;
+    border-radius: 5px;
+    outline: medium none;
+    padding: 11px 20px;
+    position: relative;
+    font-weight: 700;
+    transition: all 0.3s linear;
+    border: 0;
+}
+
+.right_addWishList:hover{
+    background-color: #9ec4f7;
+    transition: all 0.3s linear;
+}
+
+.right_shareBtns{
+    background-color: #076cec;
+    color: white;
+    text-align: center;
+    border: 0;
+    margin: 3px;
+    padding: 3px 8px 9px 10px;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+}
+
+.right_shareBtns:hover{
+    background-color: #9ec4f7;
+    transition: all 0.3s linear;
+}
+

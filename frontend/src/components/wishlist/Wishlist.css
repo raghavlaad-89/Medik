@@ -1,0 +1,26 @@
+.wishlist{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 80%;
+    margin: 50px 100px;
+}
+.wishlist_table{
+    border: .5px solid #f0c6c6;
+}
+
+.wishlist_table_head{
+    border: .5px solid #f0c6c6;
+    
+}
+.wishlist_table_body{
+    padding: 20px 20px;
+}
+
+.wishlist_table_head_r_head{
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 13px 192px 15px 3px
+}

@@ -43,7 +43,7 @@
     font-family: "Roboto", sans-serif;
 }
 
-form{
+.newsletter-form-group{
     display: flex;
     align-items: center;
     justify-content: center;
